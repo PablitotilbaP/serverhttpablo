@@ -49,7 +49,7 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
 
 
 # print('Server listening on port: ',port)
-httpd = HTTPServer(('192.168.1.104', port), SimpleHTTPRequestHandler)
+httpd = HTTPServer(('', port), SimpleHTTPRequestHandler)
 httpd.serve_forever()
 
 
