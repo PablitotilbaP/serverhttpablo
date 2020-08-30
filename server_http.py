@@ -16,10 +16,10 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(b'Hello, world!')
 
-        # client_1 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        # client_1.connect(('127.0.0.1', 8000))
-        # client_1.send(b"I am client .........hello")
-        # client_1.close()
+        client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        client.connect(('94.75.66.239', 8080))
+        client.send(b"I am client .........hello")
+        client.close()
 
     # def do_POST(self):
     #     content_length = int(self.headers['Content-Length'])
