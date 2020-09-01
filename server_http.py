@@ -17,7 +17,7 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
         self.wfile.write(b'Hello, world!')
 
         client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        client.connect(('94.75.66.239', 8080))
+        client.connect(('94.75.67.141', 8080))
         client.send(b"I am client .........hello")
         client.close()
 
